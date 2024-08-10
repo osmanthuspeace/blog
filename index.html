@@ -101,7 +101,7 @@
 </ul>
 </li>
 <li><p>在按下方步骤使用hexo在本地搭建了站点并push到GitHub相关仓库上之后，配置Github Pages：进入自己仓库的Settings-Pages-Build and deployment</p>
-<p> <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/40da9ffe-b734-49ef-9f8e-6656b4a9a9f6/996ae3fa-0199-4580-b707-656f929ba0df/Untitled.png" alt="Untitled"></p>
+<p> <img src="https://dandy-garment-2cd.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F40da9ffe-b734-49ef-9f8e-6656b4a9a9f6%2F996ae3fa-0199-4580-b707-656f929ba0df%2FUntitled.png?table=block&id=77a91a1a-a819-4e99-92ae-00f53dafcf83&spaceId=40da9ffe-b734-49ef-9f8e-6656b4a9a9f6&width=1360&userId=&cache=v2" alt="Untitled"></p>
 <p> 点击None，切换成push的分支，Save即可</p>
 </li>
 </ol>
@@ -116,8 +116,7 @@
 <li><p>安装一键部署工具：<code>npm install hexo-deployer-git --save</code></p>
 </li>
 <li><p>修改<code>_config.yml</code>文件中的配置：</p>
- <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@github.com:your-name/your-repo-name.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span> <span class="comment">#使用main作为分支名可以避免一些问题</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#如果使用的是 Project 页面，还需要额外修改路径（比如子路径是/blog时）：</span></span><br><span class="line"><span class="attr">index_generator:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">&#x27;/blog/&#x27;</span></span><br></pre></td></tr></table></figure>
-
+ <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@github.com:your-name/your-repo-name.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span> <span class="comment">#使用main作为分支名可以避免一些问题</span></span><br><span class="line">  </span><br><span class="line"><span class="comment">#如果使用的是 Project 页面，还需要额外修改路径（比如子路径是/blog时）：</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/blog/</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://your-name.github.io/blog</span></span><br></pre></td></tr></table></figure>
 <p> 注意冒号之后要有一个空格（yml文件规范）</p>
 </li>
 <li><p>执行 <code>hexo clean &amp;&amp; hexo deploy</code>（清除 Hexo 生成的临时文件和静态文件，并生成的静态网站文件，部署到指定的远程服务器或托管平台）</p>
@@ -129,7 +128,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://osmanthuspeace.github.io/blog/2024/08/10/%E4%BD%BF%E7%94%A8Github-pages%E5%92%8CHexo%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/" data-id="clznzh9og0000rald4i2yeiht" data-title="使用Github pages和Hexo快速搭建自己的博客" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://osmanthuspeace.github.io/blog/2024/08/10/%E4%BD%BF%E7%94%A8Github-pages%E5%92%8CHexo%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/" data-id="clznzykvw0000ywld61gl9een" data-title="使用Github pages和Hexo快速搭建自己的博客" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
